@@ -59,3 +59,11 @@ GROUP BY t.libelle_type
 ORDER BY prix_moyen DESC;
 
 
+--Permet de tenir les meubles les plus commandées--
+
+select nom_meuble, id_meuble, count(meuble_id) 
+from meuble inner join ligne_commande on id_meuble = meuble_id
+group by nom_meuble, id_meuble
+order by id_meuble asc;
+
+
