@@ -310,7 +310,7 @@ INSERT INTO ligne_commande (commande_id, meuble_id, prix, quantite) VALUES
     (19, 14, 780, 4),
     (19, 5, 150, 2),
     (20, 1, 120, 1),
-    (20, 13, 225, 3),
+    (20, 13, 500, 3),
     (21, 7, 320, 2),
     (21, 12, 310, 1),
     (22, 16, 140, 6),
