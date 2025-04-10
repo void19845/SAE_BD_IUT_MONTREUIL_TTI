@@ -66,4 +66,8 @@ from meuble inner join ligne_commande on id_meuble = meuble_id
 group by nom_meuble, id_meuble
 order by id_meuble asc;
 
+--Somme total d'une commande--
+
+select commande_id , SUM(prix) as Somme_total from meuble inner join ligne_commande on id_meuble = meuble_id
+group by commande_id order by commande_id;
 
