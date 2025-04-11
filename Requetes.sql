@@ -63,11 +63,63 @@ nom_meuble,           largueur  hateur  prix_meuble  libelle_materiau  libelle_t
 --creation d'une vue permettant un affichage simplifier de l'inventaire et affichant les nom des fournisseurs pour faciliter une meilleurs gestion pour vendeurs
 drop view if exists v2;
 CREATE VIEW v2 AS SELECT nom_meuble,prix_meuble, fournisseur, nom ,marque 
-FROM meuble INNER JOIN utilisateur on fournisseur = id_utilisateur ;
+FROM magasin.meuble INNER JOIN magasin.utilisateur on fournisseur = id_utilisateur ;
 
 SELECT * FROM v2
 ORDER BY fournisseur asc;
---_____________________________________________________________________________
+
+Réponse (50 tuples) :
+nom_meuble, prix_meuble, fournisseur, nom, marque
+"Canapé en cuir et métal"	860.00	3	"Leclerc"	"Marque DD"
+"Étagère en bois"	170.00	3	"Leclerc"	"Marque BB"
+"Armoire en bois et verre"	490.00	3	"Leclerc"	"Marque CC"
+"Canapé en cuir synthétique"	780.00	3	"Leclerc"	"Marque BA"
+"Table en verre et métal"	340.00	3	"Leclerc"	"Marque DB"
+"Chaise en bois"	120.00	3	"Leclerc"	"Marque A"
+"Canapé en bois"	770.00	3	"Leclerc"	"Marque BA"
+"Armoire en verre"	500.00	5	"Bernard"	"Marque BA"
+"Table en verre"	300.00	5	"Bernard"	"Marque B"
+"Canapé en tissu et métal"	800.00	5	"Bernard"	"Marque C"
+"Étagère en métal et cuir"	220.00	5	"Bernard"	"Marque C"
+"Table en métal"	310.00	5	"Bernard"	"Marque AB"
+"Étagère en cuir"	190.00	5	"Bernard"	"Marque AB"
+"Chaise en cuir"	140.00	5	"Bernard"	"Marque BB"
+"Table en cuir"	330.00	5	"Bernard"	"Marque DA"
+"Armoire en cuir"	480.00	5	"Bernard"	"Marque AD"
+"Canapé en tissu et bois"	790.00	10	"Moreau"	"Marque CA"
+"Armoire en métal et verre"	510.00	10	"Moreau"	"Marque B"
+"Chaise en bois et cuir"	170.00	10	"Moreau"	"Marque AA"
+"Armoire en bois et cuir"	530.00	10	"Moreau"	"Marque AB"
+"Armoire en métal"	450.00	10	"Moreau"	"Marque C"
+"Table en métal et cuir"	360.00	10	"Moreau"	"Marque B"
+"Chaise en verre et cuir"	180.00	10	"Moreau"	"Marque A"
+"Canapé en cuir"	800.00	12	"Leroy"	"Marque CA"
+"Étagère en plastique et cuir"	240.00	17	"Vincent"	"Marque DA"
+"Étagère en plastique"	150.00	17	"Vincent"	"Marque CA"
+"Étagère en bois et verre"	210.00	17	"Vincent"	"Marque AC"
+"Canapé en cuir et verre"	870.00	17	"Vincent"	"Marque A"
+"Table en plastique et verre"	370.00	17	"Vincent"	"Marque B"
+"Table en bois et cuir"	380.00	17	"Vincent"	"Marque AC"
+"Canapé en cuir et bois"	880.00	17	"Vincent"	"Marque AD"
+"Armoire en plastique"	460.00	23	"Chevallier"	"Marque B"
+"Chaise en métal"	130.00	23	"Chevallier"	"Marque AC"
+"Table en plastique"	290.00	23	"Chevallier"	"Marque A"
+"Étagère en plastique et métal"	200.00	23	"Chevallier"	"Marque AD"
+"Chaise en plastique et métal"	120.00	23	"Chevallier"	"Marque A"
+"Canapé en cuir véritable"	850.00	23	"Chevallier"	"Marque C"
+"Table en bois"	320.00	33	"Griezmann"	"Marque AC"
+"Armoire en plastique et verre"	520.00	33	"Griezmann"	"Marque BA"
+"Étagère en verre et cuir"	230.00	33	"Griezmann"	"Marque A"
+"Armoire en bois"	470.00	42	"Fournier"	"Marque CA"
+"Armoire en verre et cuir"	540.00	42	"Fournier"	"Marque DA"
+"Chaise en métal et cuir"	190.00	42	"Fournier"	"Marque CA"
+"Canapé en tissu"	750.00	46	"Barbier"	"Marque CA"
+"Table en bois et verre"	350.00	50	"Schneider"	"Marque A"
+"Chaise en métal et bois"	160.00	50	"Schneider"	"Marque BD"
+"Chaise en verre"	150.00	50	"Schneider"	"Marque AD"
+"Étagère en verre"	180.00	50	"Schneider"	"Marque AC"
+"Étagère en métal"	160.00	50	"Schneider"	"Marque CA"
+"Chaise en plastique"	110.00	50	"Schneider"	"Marque AB"
 
 -- Selection de tous les utilissateurs ayant une commande de prête
 
