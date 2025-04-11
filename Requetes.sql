@@ -90,12 +90,43 @@ select sum(prix),commande_id from magasin.ligne_commande group by commande_id or
 --Liste des clients avec leur nombre de commandes--
 
 SELECT u.nom, COUNT(c.id_commande) AS nombre_commandes
-FROM utilisateur u
-LEFT JOIN commande c ON u.id_utilisateur = c.utilisateur_id
-WHERE u.user_role = 'client'
-GROUP BY u.nom
-ORDER BY nombre_commandes DESC;
+FROM utilisateur u LEFT JOIN commande c ON u.id_utilisateur = c.utilisateur_id
+WHERE u.user_role = 'client' GROUP BY u.nom ORDER BY nombre_commandes DESC;
 
+Réponse (32 tuples) :
+Nom,       Nb_commande
+"Renault"	    3
+"Robert"	    2
+"Marty"      	2
+"Meyer"	      2
+"David"	      2
+"Fontaine"	  2
+"Dumas"	      2
+"Olivier"	    2
+"Perrin"	    2
+"Petit"	      2  
+"Gauthier"	  2
+"Simon"	      2
+"Dupuy"      	2
+"Durand"	    2
+"Lacroix"    	2
+"Martin"    	1
+"Bernard"	    1
+"Dupont"	    1
+"Faure"	      1
+"Garcia"	    1
+"Griezmann"	  1
+"Guillaume"	  1
+"Lambert"	    1
+"Michel"	    1
+"Muller"	    1
+"Noel"	      1
+"Richard"	    1
+"Roussel"	    1
+"Andre"	      0
+"Rousseau"	  0
+"Moreau"	    0
+"Barbier"	    0
 
 --Prix moyen des meubles par type--
 
@@ -103,7 +134,7 @@ SELECT t.libelle_type AS type_meuble, AVG(m.prix_meuble) as prix_moy
 FROM meuble m INNER JOIN type_meuble t ON m.type_meuble_id = t.id_type
 GROUP BY t.libelle_type ORDER BY prix_moy DESC;
 
-Réponse (5 tuple) :
+Réponse (5 tuples) :
 type_meuble, prix_moy
 "Canapé"	  815.0000000000000000
 "Armoire"	  495.0000000000000000
