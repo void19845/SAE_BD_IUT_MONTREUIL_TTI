@@ -1,1 +1,24 @@
-dans le cadre de cette sae nous avons été imposée un sujet 
+dans le cadre de cette sae nous avons été imposée un sujet pour la création d'une base de donée sql
+ce sujet est le suivant:
+
+Sujet 1 : meuble
+meuble (id_meuble, nom_meuble, largeur, hauteur, prix_meuble, #materiau_id, #type_meuble_id,
+fournisseur, marque)
+materiau (id_materiau, libelle_materiau)
+type_meuble (id_type, libelle_type)
+Exemples de matériau : modèle unique -ou- chêne, pin, 
+
+et l'énoncée celui si:
+
+
+Créer une base de données (un schéma sous PostgreSQL) pour un site de vente en ligne de produits dans le
+thème imposé. La base dispose de plusieurs tables, comme suit :
+1 utilisateur(id_utilisateur, login, email, nom, pwd, user_role);
+2 commande(id_commande, date_achat, #utilisateur_id, #etat_id);
+3 ligne_commande(#commande_id, #article_id, prix, quantite);
+4 ligne_panier(#utilisateur_id, #article_id, quantite, date_ajout);
+5 etat(id_etat, libelle);
+6 article(...);
+7 declinaison(...);
+8 type_article(...);
+
