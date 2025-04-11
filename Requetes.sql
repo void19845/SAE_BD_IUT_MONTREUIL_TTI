@@ -5,6 +5,7 @@ CREATE VIEW v1 as select nom_meuble,largeur,hauteur,prix_meuble,libelle_materiau
 FROM meuble INNER JOIN materiau on materiau_id=id_materiau INNER JOIN type_meuble on type_meuble_id=id_type; 
 
 select * from v1;
+
 Réponse (50 tuples) :
 nom_meuble,           largueur  hateur  prix_meuble  libelle_materiau  libelle_type  marque
 "Chaise en bois"	    50.00	    90.00	  120.00	    "Bois"	          "Chaise"	     "Marque A"
