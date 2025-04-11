@@ -102,6 +102,14 @@ SELECT t.libelle_type AS type_meuble, AVG(m.prix_meuble) as prix_moy
 FROM meuble m INNER JOIN type_meuble t ON m.type_meuble_id = t.id_type
 GROUP BY t.libelle_type ORDER BY prix_moy DESC;
 
+Réponse (5 tuple) :
+type_meuble, prix_moy
+"Canapé"	  815.0000000000000000
+"Armoire"	  495.0000000000000000
+"Table"	    335.0000000000000000
+"Étagère"	  195.0000000000000000
+"Chaise"	  147.0000000000000000
+
 --Permet de tenir les meubles les plus commandées--
 
 select nom_meuble, id_meuble, count(meuble_id) 
