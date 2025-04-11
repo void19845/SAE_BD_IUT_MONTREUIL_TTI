@@ -262,43 +262,6 @@ Commande_id, somme_total
 23	          2620
 24	          690
 25	          240
-  
---Prix total des commandes--
-  
-SELECT com.id_commande, SUM(lc.prix * lc.quantite) AS prix_total
-FROM commande com
-JOIN ligne_commande lc ON com.id_commande = lc.commande_id
-GROUP BY com.id_commande
-ORDER BY prix_total DESC;
-
-Réponse (25 tuples) :
-
-"id_commande"	"prix_total"
-23	              1035
-17	              975
-4	                950
-1	                860
-20	              820
-19	              820
-16	              795
-10	              780
-12	              680
-13	              675
-24	              655
-6	                640
-11	              620
-7	                620
-2	                580
-15	              570
-22	              560
-3                	540
-8	                525
-21	              495
-18	              475
-14	              465
-5	                440
-25	              430
-9	                375
 
 --Donner les email de tous les utilisateurs qui ont un gmail et qui ont dans leur ligne papier une armoire--
 
