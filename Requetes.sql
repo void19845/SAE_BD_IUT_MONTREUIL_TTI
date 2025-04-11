@@ -210,19 +210,7 @@ Commande_id, somme_total
 23	          2620
 24	          690
 25	          240
-
---
-
-select email from utilisateur
-where email like '%@gmail%'and id_utilisateur in (select utilisateur_id from ligne_panier 
-where meuble_id in (select id_meuble from meuble inner join type_meuble on type_meuble_id = id_type 
-where libelle_type ilike 'armoire'));
-
-Réponse (2 tuples) :
-Email
-"noah.richard@gmail.com"
-"paul.vincent@gmail.com"
-
+  
 --Prix total des commandes--
   
 SELECT com.id_commande, SUM(lc.prix * lc.quantite) AS prix_total
@@ -260,3 +248,14 @@ Réponse (25 tuples) :
 25	              430
 9	                375
 
+--Donner les email de tous les utilisateurs qui ont un gmail et qui ont dans leur ligne papier une armoire--
+
+select email from utilisateur
+where email like '%@gmail%'and id_utilisateur in (select utilisateur_id from ligne_panier 
+where meuble_id in (select id_meuble from meuble inner join type_meuble on type_meuble_id = id_type 
+where libelle_type ilike 'armoire'));
+
+Réponse (2 tuples) :
+Email
+"noah.richard@gmail.com"
+"paul.vincent@gmail.com"
