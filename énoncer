@@ -1,1 +1,15 @@
-Donner les email de tous les utilisateurs qui ont un gmail et qui ont dans leur ligne papier une armoire
+1) créé une vue permettant restraignant les informations des tables meuble, materiaux, et type_meuble au colonne nom_meuble,largeur,hauteur,prix_meuble,libelle_materiau,libelle_type,marque
+
+2) créé une vue permettant d'obtenir uniquement les colonnes nom_meuble , prix_meuble, founisseur, nom , marque des table meuble et utilisateur
+
+3) Donner tout les utilisateurs qui ont une commande prête
+
+4) Listé les clients et leur nombre de commandes
+
+5) Avoir le prix moyen de chaque type de meuble
+
+6) Classer les meubles dans l'odres, les plus commandées au moins commandées
+
+7) Donner le prix total de chaque commande
+
+8) Donner les email de tous les utilisateurs qui ont un gmail et qui ont dans leur ligne papier une armoire
