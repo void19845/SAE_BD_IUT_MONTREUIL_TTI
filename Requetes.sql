@@ -82,10 +82,6 @@ veut les utilisateur et leurs commande
 --select nom, id_utilisateur, id_commande, libelle from utilisateur left join commande on id_utilisateur = utilisateur_id  inner join etat on etat_id = id_etat where user_role ilike 'Client' order by id_utilisateur asc;
 --A TERMINER
 
---______________________________________________________________________________
---permet davoir le prix total de chaque comande
-select sum(prix),commande_id from magasin.ligne_commande group by commande_id order by commande_id asc
-
 
 --Liste des clients avec leur nombre de commandes--
 
