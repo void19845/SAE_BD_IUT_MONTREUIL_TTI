@@ -113,6 +113,34 @@ order by id_meuble asc;
 
 --Somme total d'une commande--
 
-select commande_id , SUM(prix) as Somme_total from meuble inner join ligne_commande on id_meuble = meuble_id
+select commande_id , SUM(prix*quantite) as Somme_total from meuble inner join ligne_commande on id_meuble = meuble_id
 group by commande_id order by commande_id;
+
+Réponse (25 tuples) :
+Commande_id, somme_total  
+1	            4090
+2	            390
+3	            1590
+4	            2440
+5	            370
+6	            1370
+7	            900
+8	            3090
+9	            750
+10	          1120
+11	          440
+12	          1930
+13	          3170
+14	          1910
+15	          1260
+16	          1300
+17	          520
+18	          710
+19	          3420
+20	          1620
+21	          950
+22	          1590
+23	          2620
+24	          690
+25	          240
 
