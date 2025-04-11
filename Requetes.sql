@@ -65,13 +65,7 @@ FROM meuble INNER JOIN utilisateur on fournisseur = id_utilisateur ;
 
 SELECT * FROM v2
 ORDER BY fournisseur asc;
---______________________________________________________________________________
-
-drop view v3
-CREATE VIEW V3 AS SELECT  
-FROM 
-
---______________________________________________________________________________
+--_____________________________________________________________________________
 
 -- Selection de tous les utilissateurs ayant une commande de prête
 
