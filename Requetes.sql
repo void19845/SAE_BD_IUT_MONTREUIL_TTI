@@ -74,6 +74,23 @@ ORDER BY fournisseur asc;
 select nom from utilisateur where user_role ilike 'Client' and id_utilisateur in ( select id_commande
 from commande where etat_id in (select id_etat from etat where libelle ilike 'validé'));
 
+Réponse (14 tuples) :
+Nom
+"Richard"
+"Petit"
+"Simon"
+"Guillaume"
+"Lambert"
+"Perrin"
+"Dumas"
+"Lacroix"
+"Marty"
+"Griezmann"
+"Meyer"
+"Dupuy"
+"Andre"
+"Rousseau"
+
 --______________________________________________________________________________
 
 --Liste des clients avec leur nombre de commandes--
