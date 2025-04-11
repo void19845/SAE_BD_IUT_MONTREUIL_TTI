@@ -76,13 +76,6 @@ from commande where etat_id in (select id_etat from etat where libelle ilike 'va
 
 --______________________________________________________________________________
 
-
-
-veut les utilisateur et leurs commande 
---select nom, id_utilisateur, id_commande, libelle from utilisateur left join commande on id_utilisateur = utilisateur_id  inner join etat on etat_id = id_etat where user_role ilike 'Client' order by id_utilisateur asc;
---A TERMINER
-
-
 --Liste des clients avec leur nombre de commandes--
 
 SELECT u.nom, COUNT(c.id_commande) AS nombre_commandes
