@@ -6,12 +6,13 @@ FROM meuble INNER JOIN materiau on materiau_id=id_materiau INNER JOIN type_meubl
 
 select * from v1;
 Réponse (50 tuples) :
-"Chaise en bois"	50.00	90.00	120.00	"Bois"	"Chaise"	"Marque A"
-"Table en verre"	150.00	75.00	300.00	"Verre"	"Table"	"Marque B"
-"Armoire en métal"	200.00	180.00	450.00	"Métal"	"Armoire"	"Marque C"
-"Canapé en cuir"	200.00	90.00	800.00	"Cuir"	"Canapé"	"Marque CA"
-"Étagère en plastique"	100.00	150.00	150.00	"Plastique"	"Étagère"	"Marque CA"
-"Chaise en métal"	50.00	90.00	130.00	"Métal"	"Chaise"	"Marque AC"
+nom_meuble,           largueur  hateur  prix_meuble  libelle_materiau  libelle_type  marque
+"Chaise en bois"	    50.00	    90.00	  120.00	    "Bois"	          "Chaise"	     "Marque A"
+"Table en verre"	    150.00	  75.00	  300.00	    "Verre"	          "Table"	       "Marque B"
+"Armoire en métal"	  200.00	  180.00	450.00	    "Métal"	          "Armoire"	     "Marque C"
+"Canapé en cuir"	    200.00	  90.00	  800.00	    "Cuir"	          "Canapé"	     "Marque CA"
+"Étagère en plastique"	100.00	150.00	150.00	    "Plastique"	      "Étagère"	     "Marque CA"
+"Chaise en métal"	    50.00	    90.00	  130.00	    "Métal"	          "Chaise"	     "Marque AC"
 "Table en bois"	150.00	75.00	320.00	"Bois"	"Table"	"Marque AC"
 "Armoire en bois"	200.00	180.00	470.00	"Bois"	"Armoire"	"Marque CA"
 "Canapé en tissu"	200.00	90.00	750.00	"Plastique"	"Canapé"	"Marque CA"
