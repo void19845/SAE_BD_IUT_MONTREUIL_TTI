@@ -2,6 +2,6 @@
 evaluation en semi autonomie de base de donée en groupe
 
 contributeur 
--thaï-nam ngo marié
--thierry chen
--imad fadil
+-thaï-nam ngo marié tp:c1
+-thierry chen  tp:c1
+-imad fadil tp:c1
