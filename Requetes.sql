@@ -211,3 +211,14 @@ Commande_id, somme_total
 24	          690
 25	          240
 
+--
+
+select email from utilisateur
+where email like '%@gmail%'and id_utilisateur in (select utilisateur_id from ligne_panier 
+where meuble_id in (select id_meuble from meuble inner join type_meuble on type_meuble_id = id_type 
+where libelle_type ilike 'armoire'));
+
+Réponse (2 tuples) :
+Email
+"noah.richard@gmail.com"
+"paul.vincent@gmail.com"
