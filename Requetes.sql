@@ -98,12 +98,9 @@ ORDER BY nombre_commandes DESC;
 
 --Prix moyen des meubles par type--
 
-SELECT t.libelle_type AS type_meuble, AVG(m.prix_meuble)
-FROM meuble m
-JOIN type_meuble t ON m.type_meuble_id = t.id_type
-GROUP BY t.libelle_type
-ORDER BY prix_moyen DESC;
-
+SELECT t.libelle_type AS type_meuble, AVG(m.prix_meuble) as prix_moy
+FROM meuble m INNER JOIN type_meuble t ON m.type_meuble_id = t.id_type
+GROUP BY t.libelle_type ORDER BY prix_moy DESC;
 
 --Permet de tenir les meubles les plus commandées--
 
