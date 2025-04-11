@@ -121,19 +121,19 @@ nom_meuble,               id_meuble, nombre
 "Étagère en plastique"	    5  	        3
 "Chaise en métal"	          6	          4
 "Table en bois"	            7           3
-"Armoire en bois"	8	          2
-"Canapé en tissu"	9	          3
-"Étagère en métal"	10	      2
-"Chaise en plastique"	11	    2
-"Table en métal"	12	        3
-"Armoire en verre"	13	      1
-"Canapé en cuir synthétique"	14 3
-"Étagère en bois"	15	        3
-"Chaise en cuir"	16	        3
-"Canapé en cuir véritable"	19	1
-"Étagère en cuir"	25	        1
-"Chaise en métal et bois"	26	1
-"Canapé en cuir et bois"	49	1
+"Armoire en bois"	          8	          2
+"Canapé en tissu"	          9	          3
+"Étagère en métal"	        10  	      2
+"Chaise en plastique"	      11	        2
+"Table en métal"	          12	        3
+"Armoire en verre"	        13   	      1
+"Canapé en cuir synthétique"14          3
+"Étagère en bois"	          15	        3
+"Chaise en cuir"	          16	        3
+"Canapé en cuir véritable"	19	        1
+"Étagère en cuir"	          25	        1
+"Chaise en métal et bois"	  26	        1
+"Canapé en cuir et bois"	  49	        1
 
 --Somme total d'une commande--
 
